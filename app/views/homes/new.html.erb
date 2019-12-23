@@ -1,0 +1,6 @@
+<%=form_tag homes_path,method: :post do |f|%>
+          <div class="product-search d-flex align-items-center justify-content-center mb-20 mt-20">
+            <%= text_field_tag 'url' %>
+            <%= submit_tag("Get", :class=>"btn btn-primary theme-btn-primary plr-60 ml-15 plr-xs-10", :name=>"submit") %>
+          </div>
+        <%end%> 
