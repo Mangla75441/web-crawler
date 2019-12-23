@@ -20,7 +20,6 @@ class HomesController < ApplicationController
   	 end
   	 		
 		SitemapGenerator::Sitemap.create do
-			# binding.pry
   		agent = Mechanize.new
     	page = agent.get(SitemapGenerator::Sitemap.default_host)
     	url = page.uri.to_s
